@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Maria",
+    "lastname": "Sousa",
+    "age": "20",
+    "city": "São Paulo"
+  },
+  {
+    "name": "Mariana",
+    "lastname": "Silva",
+    "age": "32",
+    "city": "Minas Gerais"
+  },
+  {
+    "name": "Victor",
+    "lastname": "Santos",
+    "age": "18",
+    "city": "Acre"
+  }
+]

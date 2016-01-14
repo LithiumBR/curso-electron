@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula 03 - Notificações</title>
+  <link rel="stylesheet" href="css/milligram.min.css">
+  <script src="js/angular.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body ng-controller="ListCtrl as vm">
+  <h1>Aula 03</h1>
+
+  <button class="button button-outline" ng-click="vm.getList()">
+    Pegar lista
+  </button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Idade</th>
+        <th>Cidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in vm.list">
+        <td>{{item.name}}</td>
+        <td>{{item.lastname}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.city}}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

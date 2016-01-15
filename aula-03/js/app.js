@@ -3,7 +3,7 @@
 
   let app = angular.module('app', [])
 
-  const notify = (x) => {
+  const notify = x => {
     new Notification('Dados atualizados', {
       body: 'Primeiro nome: ' + x
     })
@@ -24,7 +24,7 @@
 
     vm.getList = () => {
       $http.get('data.json').then((response) => {
-        response.data.forEach((item) => vm.list.push(item))
+        response.data.forEach(item => vm.list.push(item))
 
         notify(response.data[0].name)
       }, () => {
